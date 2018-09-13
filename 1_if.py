@@ -10,8 +10,10 @@ def type_of_activity (user_age):
 			return 'Ученье свет!'
 		elif user_age >17 and user_age<=23:
 			return 'Мам, мне ко второй!'
-		else:
+		elif user_age >24 and user_age<100:
 			return 'Arbeit macht frei!'
+		else:
+			return 'А вы точно еще живы?'
 	except (TypeError, ValueError):
 		print("Неверный тип данных")
 		sys.exit ()

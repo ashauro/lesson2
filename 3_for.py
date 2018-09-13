@@ -15,7 +15,7 @@ for main_data_string in score_list:
 
 	for current_score in score_string:
 		sum_of_scores = sum_of_scores + current_score
-		number_of_scores = number_of_scores + 1
+		number_of_scores += 1
 	
 	print ('Список оценок класса {} - {}'.format(class_number, score_string))
 	print ('Средний балл {} класса составляет: {}'.format(class_number, round(sum_of_scores/number_of_scores,2)))
